@@ -23,6 +23,10 @@ h2 {
     font-size: 1.25em;
 }
 
+h3 {
+    font-size: 1.15em;
+}
+
 a {
     color: rgb(115, 149, 183);
 }
@@ -34,13 +38,46 @@ a {
 }
 
 .info-box {
-    text-align: center;
     background-color: rgb(var(--divColor));
     padding: var(--divPad);
     border-radius: 3rem;
+    margin-top: 0.5%;
+}
+
+.resume-body-headers {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Only modify padding when on a large screen. Media query taken from https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+
+@media only screen and (min-width: 992px) {
+    .resume-body-col {
+        padding-right: 0.25%;
+    }   
+}
+
+.list-header {
+    font-size: 1.1em;
+    font-weight: 650;
+    padding-top: 5%;
+}
+
+.project-img {
+    max-width: 95%;
+    max-height: 95%;
+    margin-bottom: 3%;
+}
+
+.list-p {
+    margin-bottom: 0;
 }
 
 /* IDs */
+
+#contact-info {
+    text-align: center;
+}
 
 #profile-pic {
     max-width: 200px;
@@ -49,4 +86,13 @@ a {
     min-height: none;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+#projects {
+    margin-top: 2%;
+    background-color: rgb(16, 24, 32);
+}
+
+#resume-body {
+    margin-top: 2%;
 }

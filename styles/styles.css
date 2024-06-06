@@ -1,0 +1,52 @@
+/* CONSTANTS */
+
+:root {
+    --divColor: 59, 63, 66;
+    --divPad: 2%;
+}
+
+/* ELEMENTS */
+
+body {
+    background-color: rgb(67, 86, 102);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(231, 238, 245);
+    padding-top: 2%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 610;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+a {
+    color: rgb(115, 149, 183);
+}
+
+/* CLASSES */
+
+.row {
+    margin-bottom: 2.5%;
+}
+
+.info-box {
+    text-align: center;
+    background-color: rgb(var(--divColor));
+    padding: var(--divPad);
+    border-radius: 3rem;
+}
+
+/* IDs */
+
+#profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    min-width: none;
+    min-height: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
